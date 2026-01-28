@@ -1,5 +1,5 @@
 # 🌍 Talent Universe
-
+> Version: v0.1 – Initial UI Demo
 A modern, responsive talent discovery platform template built for the Pi Network ecosystem.
 
 ---
@@ -29,3 +29,6 @@ MIT License
 ---
 
 Built with ❤️ for the Pi community.
+## 📌 Status
+Current version is a UI demo (v0.1).
+No backend or Pi SDK production integration yet.
