@@ -1,85 +1,87 @@
-/* إعدادات عامة */
+/* Reset */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+/* Body */
 body {
-  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background: linear-gradient(135deg, #0b0f1a, #121a33);
   color: #ffffff;
-  line-height: 1.6;
   direction: rtl;
+  line-height: 1.6;
 }
 
-/* الهيدر */
+/* Header */
 header {
-  padding: 60px 20px;
   text-align: center;
+  padding: 70px 20px;
   background: radial-gradient(circle at top, #1b2550, #0b0f1a);
 }
 
 header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-size: 2.6rem;
+  margin-bottom: 12px;
 }
 
 header p {
   font-size: 1.1rem;
   opacity: 0.9;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
-/* زر */
+/* Button */
 button {
   background: linear-gradient(135deg, #7b61ff, #5a3bff);
-  color: #ffffff;
+  color: #fff;
   border: none;
-  padding: 14px 28px;
+  padding: 14px 30px;
   font-size: 1rem;
-  border-radius: 10px;
+  border-radius: 12px;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: all 0.25s ease;
 }
 
 button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(123, 97, 255, 0.4);
+  box-shadow: 0 10px 30px rgba(123, 97, 255, 0.4);
 }
 
-/* الأقسام */
+/* Sections */
 section {
-  padding: 50px 20px;
   text-align: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 55px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 section h2 {
   font-size: 1.8rem;
-  margin-bottom: 10px;
   color: #a9b7ff;
+  margin-bottom: 10px;
 }
 
 section p {
   max-width: 600px;
   margin: auto;
-  font-size: 1rem;
   opacity: 0.9;
+  font-size: 1rem;
 }
 
-/* الفوتر */
+/* Footer */
 footer {
-  padding: 25px 20px;
   text-align: center;
+  padding: 25px 20px;
   background: #070b14;
   font-size: 0.9rem;
   opacity: 0.8;
 }
 
-/* استجابة للموبايل */
+/* Mobile */
 @media (max-width: 600px) {
   header h1 {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
 
   section h2 {
