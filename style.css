@@ -1,59 +1,88 @@
-:root {
-  --primary-color: #7B2CBF;
-  --secondary-color: #C77DFF;
-  --bg-color: #0f0f1a;
-  --card-bg: #1a1a2e;
-  --text-color: #ffffff;
-}
-
+/* إعدادات عامة */
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
 }
 
 body {
-  background: var(--bg-color);
-  color: var(--text-color);
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #0b0f1a, #121a33);
+  color: #ffffff;
+  line-height: 1.6;
+  direction: rtl;
 }
 
-.header {
+/* الهيدر */
+header {
+  padding: 60px 20px;
   text-align: center;
-  padding: 2rem;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background: radial-gradient(circle at top, #1b2550, #0b0f1a);
 }
 
-.container {
-  padding: 2rem;
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
-.talents {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 25px;
 }
 
-.card {
-  background: var(--card-bg);
-  padding: 1rem;
-  border-radius: 12px;
+/* زر */
+button {
+  background: linear-gradient(135deg, #7b61ff, #5a3bff);
+  color: #ffffff;
+  border: none;
+  padding: 14px 28px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(123, 97, 255, 0.4);
+}
+
+/* الأقسام */
+section {
+  padding: 50px 20px;
   text-align: center;
-  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.card img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 1rem;
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #a9b7ff;
 }
 
-.card h3 {
-  margin-bottom: 0.5rem;
+section p {
+  max-width: 600px;
+  margin: auto;
+  font-size: 1rem;
+  opacity: 0.9;
 }
 
-.footer {
+/* الفوتر */
+footer {
+  padding: 25px 20px;
   text-align: center;
-  padding: 1rem;
-  opacity: 0.7;
+  background: #070b14;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* استجابة للموبايل */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
 }
