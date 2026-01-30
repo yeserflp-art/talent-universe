@@ -1,73 +1,54 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Talent Universe</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 
   <!-- Pi SDK -->
   <script src="https://sdk.minepi.com/pi-sdk.js"></script>
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #0b0f1a;
-      color: #ffffff;
-    }
-    header, section, footer {
-      padding: 20px;
-      text-align: center;
-    }
-    button {
-      background: #7b61ff;
-      color: #fff;
-      border: none;
-      padding: 12px 20px;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-    button:hover {
-      opacity: 0.9;
-    }
-  </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Talent Universe</h1>
-  <p>اكتشف موهبتك في عالم لا مركزي على شبكة Pi Network</p>
-  <button>ابدأ الآن</button>
-</header>
+  <header>
+    <h1>Talent Universe</h1>
+    <p>اكتشف موهبتك في عالم لا مركزي على شبكة Pi Network</p>
+    <button>ابدأ الآن</button>
+  </header>
 
-<section>
-  <h2>مميزات التطبيق</h2>
-  <p>منصة Web3 آمنة لتنمية المواهب والإبداع</p>
-</section>
+  <section>
+    <h2>مميزات التطبيق</h2>
+    <p>منصة Web3 آمنة لتنمية المواهب والإبداع</p>
+  </section>
 
-<section>
-  <h2>قسم الأطفال</h2>
-  <p>بيئة محمية ومراقبة لتنمية مواهب الأطفال</p>
-</section>
+  <section>
+    <h2>قسم الأطفال</h2>
+    <p>بيئة محمية ومراقبة لتنمية مواهب الأطفال بشكل إيجابي</p>
+  </section>
 
-<section>
-  <h2>وضع التعليم</h2>
-  <p>تعلم، ورشات، تحديات ومشاريع عملية</p>
-</section>
+  <section>
+    <h2>وضع التعليم</h2>
+    <p>تعلم، ورشات، تحديات ومشاريع عملية في بيئة داعمة</p>
+  </section>
 
-<section>
-  <h2>انضم إلى المجتمع</h2>
-  <p>تواصل مع مبدعين من جميع أنحاء العالم</p>
-</section>
+  <section>
+    <h2>انضم إلى المجتمع</h2>
+    <p>تواصل مع مبدعين من جميع أنحاء العالم وتعاون معهم</p>
+  </section>
 
-<footer>
-  <p>© 2024 Talent Universe — مبني على شبكة Pi Network</p>
-</footer>
+  <footer>
+    <p>© 2024 Talent Universe — مبني على شبكة Pi Network</p>
+  </footer>
 
-<script>
-  Pi.init({ version: "2.0" });
-</script>
+  <script>
+    if (window.Pi) {
+      Pi.init({ version: "2.0" });
+    }
+  </script>
 
 </body>
 </html>
